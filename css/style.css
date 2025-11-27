@@ -1,0 +1,496 @@
+﻿/* 全局重置 + 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", "Heiti SC", "SimSun", sans-serif;
+}
+
+body {
+    background-color: #f8f5f0; /* 巴蜀土色基调 */
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 容器样式（居中布局） */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部导航样式（巴蜀红主题） */
+header {
+    background-color: #9c2c1a; /* 巴蜀传统红色 */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+    .logo span {
+        color: #ffd700; /* 金色点缀 */
+    }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 35px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+    .nav-link:hover, .nav-link.active {
+        background-color: #ffd700;
+        color: #9c2c1a;
+    }
+
+/* 轮播图样式 */
+.banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-slider {
+    display: flex;
+    width: 300%; /* 3张图 */
+    height: 100%;
+    animation: slide 15s infinite alternate;
+}
+
+.banner-item {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片比例填充 */
+}
+
+.banner-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    color: #fff;
+    text-align: center;
+}
+
+    .banner-text h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-text p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(0);
+    }
+
+    38% {
+        transform: translateX(-100%);
+    }
+
+    71% {
+        transform: translateX(-100%);
+    }
+
+    76% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* 板块标题样式 */
+.section-title {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+    .section-title h2 {
+        font-size: 32px;
+        color: #9c2c1a;
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #ffd700;
+    }
+
+    .section-title p {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #666;
+    }
+
+/* 首页板块卡片样式 */
+.home-sections {
+    padding: 50px 0;
+}
+
+.cards-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+.card-img {
+    width: 100%;
+    height: 220px;
+}
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.card-content {
+    padding: 25px;
+}
+
+    .card-content h3 {
+        font-size: 20px;
+        color: #9c2c1a;
+        margin-bottom: 15px;
+    }
+
+    .card-content p {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+.card-btn {
+    display: inline-block;
+    background-color: #9c2c1a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+    .card-btn:hover {
+        background-color: #7a2012;
+    }
+
+/* 单页面内容样式（文化、IP、文旅等） */
+.page-content {
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 30px 0 60px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .page-header h2 {
+        font-size: 36px;
+        color: #9c2c1a;
+        margin-bottom: 10px;
+    }
+
+    .page-header p {
+        color: #666;
+        font-size: 18px;
+    }
+
+.content-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.content-img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .content-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.content-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* 产品页面样式 */
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+}
+
+    .product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.product-info {
+    padding: 20px;
+}
+
+    .product-info h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+.product-price {
+    color: #9c2c1a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-btn {
+    display: block;
+    width: 100%;
+    background-color: #ffd700;
+    color: #9c2c1a;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+    .product-btn:hover {
+        background-color: #ffc107;
+    }
+
+/* 关于我页面样式 */
+.about-wrap {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 30px;
+}
+
+.about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #f0e6d2;
+}
+
+    .about-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.about-text h3 {
+    font-size: 28px;
+    color: #9c2c1a;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.footer-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+    .footer-col h3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #ffd700;
+    }
+
+.footer-col ul {
+    list-style: none;
+}
+
+    .footer-col ul li {
+        margin-bottom: 15px;
+    }
+
+        .footer-col ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .footer-col ul li a:hover {
+                color: #ffd700;
+            }
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #444;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* 响应式适配（手机、平板） */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .cards-wrap, .content-wrap, .products-list, .footer-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrap {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .nav-item {
+        margin: 10px 15px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+
+    .cards-wrap, .content-wrap, .products-list, .footer-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .about-wrap {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}

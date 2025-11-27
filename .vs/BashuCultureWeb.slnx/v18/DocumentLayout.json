@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\BashuCultureWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74D5B093-8190-5BBF-449F-AC81032FC821}|BashuCultureWeb.csproj|d:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\bashucultureweb\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74D5B093-8190-5BBF-449F-AC81032FC821}|BashuCultureWeb.csproj|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74D5B093-8190-5BBF-449F-AC81032FC821}|BashuCultureWeb.csproj|d:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\bashucultureweb\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74D5B093-8190-5BBF-449F-AC81032FC821}|BashuCultureWeb.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "about.html",
+              "DocumentMoniker": "D:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\BashuCultureWeb\\about.html",
+              "RelativeDocumentMoniker": "about.html",
+              "ToolTip": "D:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\BashuCultureWeb\\about.html",
+              "RelativeToolTip": "about.html",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAwGQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-27T09:10:40.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\BashuCultureWeb\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "D:\\\u9879\u76EE\\\u5C0F\u6311\u7F51\u9875\u5F00\u53D1\\BashuCultureWeb\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-27T09:06:29.539Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
