@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BashuCultureWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95f064f4e10ce4cbb7e57bcda4951951f407cb25")]
 [assembly: System.Reflection.AssemblyProductAttribute("BashuCultureWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BashuCultureWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
